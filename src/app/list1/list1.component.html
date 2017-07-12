@@ -1,0 +1,22 @@
+<div class="container">
+  <h3>Add a new item</h3>
+  
+  <input #newHero1 type="text"
+    (keyup.enter)="addHero1(newHero1.value)"
+    (blur)="addHero1(newHero1.value); newHero1.value='' ">
+
+  <button class="btn btn-secondary" (click)=addHero1(newHero1.value)>Add</button>
+
+  <h3 *ngFor="let hero of heroes1; let i = index"
+    (click)="hideLi1(i)">
+    
+    <button class="btn btn-primary">Select</button>
+    <span [ngClass]="{'animated-li': animated == i}">
+      {{hero.name}}
+    </span>
+  </h3>
+  <br>
+
+  <p class="col-xs-3" [@myAnimation]='state' (click)="animateMe()">Animated paragraph</p>
+
+</div>
