@@ -42,11 +42,9 @@ export class List1Component {
   }
 
   @HostListener('mouseenter') onMouseEnter() {
-    console.log('enter');
     this.state = 'large';
   }
   @HostListener('mouseleave') onMouseLeave() {
-    console.log('leave');
     this.state = 'small';
   }
 

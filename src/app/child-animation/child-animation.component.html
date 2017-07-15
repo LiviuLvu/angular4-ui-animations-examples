@@ -1,3 +1,10 @@
-<p>
-  To do: Child Element Animation
-</p>
+<h3>Animate child after parent</h3>
+
+<button class="btn btn-primary" (click)="toggle()">Animate</button>
+
+<div [@parentAnimation]="state">
+  <h3>Hello!</h3>
+  <span [@childAnimation]="state">One</span>
+  <span [@childAnimation]="state">Two</span>
+  <span [@childAnimation]="state">Three</span> 
+</div>
