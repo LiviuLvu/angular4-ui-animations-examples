@@ -2,6 +2,8 @@
 
 Tested some angular 4 examples of ui animation. The purpouse of this was to learn how to work with the angular animations module.
 
+Live preview: `https://liviulvu.github.io/angular4-ui-animations-examples/`
+
 ----
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
