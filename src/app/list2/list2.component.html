@@ -1,14 +1,12 @@
-<div class="container">
-  <h3 class="animate">Animated CTA Title</h3>
-  <p>Click list element to trigger highlight</p>
-  <ul id="grouplist" class="list-group">
-    <li class="list-group-item" 
-      *ngFor="let item of items; let i=index"
-      (click)="select(i)"
-      [ngClass]="{ 'active': selectedIndex == i }">
-      {{ item.text }}
-    </li>
-  </ul>
+<h3 class="animate">Animated CTA Title List2</h3>
+<p>Click list element to trigger highlight</p>
+<ul id="grouplist" class="list-group">
+  <li class="list-group-item" 
+    *ngFor="let item of items; let i=index"
+    (click)="select(i)"
+    [ngClass]="{ 'active': selectedIndex == i }">
+    {{ item.text }}
+  </li>
+</ul>
 
-  <p class="alert alert-warning" *ngIf="selectedIndex > -1">You selected item #{{selectedIndex + 1}}</p>
-</div>
+<p class="alert alert-warning" *ngIf="selectedIndex > -1">You selected item #{{selectedIndex + 1}}</p>

@@ -11,11 +11,11 @@ body {
   font-weight: 800;
   background-color: peachpuff;
   padding: 12px;
-  transition-duration: .25s;
+  transition-duration: .15s;
 }
 
 .animate {
-  transition: all .15s ease-in-out;
+  transition: all .1s ease-in-out;
 }
 
 .animate:hover {

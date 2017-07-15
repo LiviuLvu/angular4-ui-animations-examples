@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
@@ -7,16 +7,16 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   animations: [
     trigger('myAnimation', [
 
-      state('small', style({
-        backgroundColor:'#eee',
+      state('*', style({
         transform: 'scale(1)',
+        transformOrigin: 'left'
       })),
       state('large', style({
-        backgroundColor:'#cfd8dc',
         transform: 'scale(1.5)',
+        transformOrigin: 'left'
       })),
 
-      transition('small <=> large', animate('150ms ease-out'))
+      transition('small <=> large', animate('150ms ease'))
     ])
   ]
 })
@@ -27,7 +27,8 @@ export class List1Component {
 
   heroes1 = [
     { id: 1, name: "Bach" },
-    { id: 2, name: "Schubert" }
+    { id: 2, name: "Schubert" },
+    { id: 2, name: "Handel" },
   ];
 
   addHero1(newHero1: string) {
@@ -40,8 +41,13 @@ export class List1Component {
     this.animated = index;
   }
 
-  animateMe() {
-    this.state = (this.state === 'small' ? 'large' : 'small')
+  @HostListener('mouseenter') onMouseEnter() {
+    console.log('enter');
+    this.state = 'large';
+  }
+  @HostListener('mouseleave') onMouseLeave() {
+    console.log('leave');
+    this.state = 'small';
   }
 
 }

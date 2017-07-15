@@ -1,12 +1,10 @@
-<div class="container">
-  <h3>Show content after animation ends</h3>
-  
-  <div class="alert alert-info" (@heightToggle.done)="showText()" [@heightToggle]="state">
-    <p [ngClass]="{'hidden-content': hidden == true}">
-      <span class="fa fa-info-circle" aria-hidden="true"></span>
-      This text appears after the div animation is done
-    </p>
-  </div>
+<h3>Show content after animation ends</h3>
 
-  <button class="btn btn-primary" (click)="unhide()">Toggle Content</button>
+<div class="alert alert-info" (@heightToggle.done)="showText()" [@heightToggle]="state">
+  <p [ngClass]="{'hidden-content': hidden == true}">
+    <span class="fa fa-info-circle" aria-hidden="true"></span>
+    This text appears after the div animation is done
+  </p>
 </div>
+
+<button class="btn btn-primary" (click)="unhide()">Toggle Content</button>
