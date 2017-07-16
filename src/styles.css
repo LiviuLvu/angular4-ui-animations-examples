@@ -2,7 +2,19 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import "~font-awesome/css/font-awesome.css";
 
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
+  padding-bottom: 50px;
+  position: relative;
+}
+
+footer {
+  background-color: tan;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 
@@ -31,4 +43,8 @@ body {
 .show-hidden-content {
   padding: 15px;
   height: 300px;
+}
+
+.hide-overflow {
+  overflow: hidden;
 }

@@ -36,6 +36,5 @@ export class ChildAnimationComponent {
 
   toggle = () => {
     this.state =! this.state;
-    console.log(this.state);
   }
 }

@@ -9,11 +9,11 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 
       state('*', style({
         transform: 'scale(1)',
-        transformOrigin: 'left'
+        transformOrigin: 'right'
       })),
       state('large', style({
-        transform: 'scale(1.5)',
-        transformOrigin: 'left'
+        transform: 'scale(1.1)',
+        transformOrigin: 'right'
       })),
 
       transition('small <=> large', animate('150ms ease'))

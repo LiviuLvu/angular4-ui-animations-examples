@@ -8,6 +8,7 @@ import { List2Component } from './list2/list2.component';
 import { HiddenElementComponent } from './hidden-element/hidden-element.component';
 import { StaggerAnimationComponent } from './stagger-animation/stagger-animation.component';
 import { ChildAnimationComponent } from './child-animation/child-animation.component';
+import { SwitchContent } from './switch-content/switch-content.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ChildAnimationComponent } from './child-animation/child-animation.compo
     List2Component,
     HiddenElementComponent,
     StaggerAnimationComponent,
-    ChildAnimationComponent
+    ChildAnimationComponent,
+    SwitchContent
   ],
   imports: [
     BrowserModule,

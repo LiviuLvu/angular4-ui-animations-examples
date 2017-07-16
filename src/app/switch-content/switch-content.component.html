@@ -1,0 +1,21 @@
+<h3>Show new content</h3>
+<button class="btn btn-primary" (click)="stateChange()">Switch</button>
+<br><br>
+
+<div class="well hide-overflow"
+  [@container]="containerState"
+  (@container.done)="fadeContent()" 
+  [ngSwitch]="switch_exp">
+
+  <ng-container [@enterTrigger]="triggerState" *ngSwitchDefault>
+    <h4>First Group</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi magni tenetur eaque, dolor totam commodi officia?</p>
+  </ng-container>
+  
+ <!-- *ngIf="group2state" -->
+  <ng-container [@enterTrigger]="'fadeIn'" *ngSwitchCase="true">
+    <h2>Second Group</h2>
+    <p>Expedita quam perferendis, quod aspernatur saepe pariatur quasi enim, quia porro necessitatibus repellat sit. Nisi magni tenetur eaque, dolor totam commodi officia? Expedita quam perferendis, quod aspernatur saepe pariatur quasi enim, quia porro necessitatibus repellat sit. Nisi magni tenetur eaque, dolor totam commodi officia.
+    </p>
+  </ng-container>
+</div>
