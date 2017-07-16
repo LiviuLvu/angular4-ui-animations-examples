@@ -1,7 +1,7 @@
 # ListItemsTest
 
 Live preview:  
-`https://liviulvu.github.io/angular4-ui-animations-examples/`  
+[https://liviulvu.github.io/angular4-ui-animations-examples/]()  
 
 Tested some angular 4 examples of ui animation. The purpouse of this was to learn how to work with the angular animations module.
 
